@@ -1,0 +1,80 @@
+/*
+bg - #000
+orange - #ff9501
+grey - #a6a6a6
+white - #fdfdfd
+ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+html {
+  font-size: 16px;
+}
+
+.wrapper {
+  margin: 3rem auto;
+  padding: 0 0.5rem;
+}
+.calc {
+  margin: 0 auto;
+  padding: 0.5rem;
+  width: 19rem;
+  background-color: #000;
+  border-radius: 1.2rem;
+  color: #fff;
+  font-family: Arial;
+  box-shadow: 0.4rem 0.4rem 0.4rem #4f4f4f;
+}
+.calc__buttons {
+  display: grid;
+  grid-template-areas: 
+  "ac plus-minus persent division"
+  "seven eigth nine multi"
+  "four five six minus"
+  "one two three plus"
+  "zero zero dot equal";
+  grid-gap: 0.5rem;
+  justify-items: center;
+}
+.btn.zero {
+  grid-area: zero;
+  width: 100%;
+  border-radius: 2rem;
+}
+.btn {
+  width: 4rem;
+  height: 4rem;
+  text-align: center;
+  background-color: #333;
+  border-radius: 50%;
+  line-height: 4rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.btn:hover {
+  filter: brightness(120%);
+}
+.btn:active {
+  filter: brightness(90%);
+}
+.bg-white {
+  background-color: #a6a6a6;
+}
+.bg-orange {
+background-color: #ff9501;
+}
+
+.calc__screen {
+  height: 8rem;
+  padding: 0.5rem;
+  display: grid;
+  justify-items: end;
+  align-items: end;
+}
+.calc__screen span {
+  font-size: 4rem;
+  font-weight: 400;
+}
